@@ -20,7 +20,7 @@ class PoliceTest {
         Driver driver = new Driver(19);
 
         //when
-        boolean result = police.checkDriver(driver);
+        boolean result = police.checkDriverAge(driver);
 
         //then
         Assertions.assertEquals(true,result);
@@ -32,7 +32,7 @@ class PoliceTest {
         Driver driver = new Driver(18);
 
         //when
-        boolean result = police.checkDriver(driver);
+        boolean result = police.checkDriverAge(driver);
 
         //then
         Assertions.assertEquals(true,result);
@@ -45,7 +45,7 @@ class PoliceTest {
         Driver driver = new Driver(17);
 
         //when
-        boolean result = police.checkDriver(driver);
+        boolean result = police.checkDriverAge(driver);
 
         //then
         Assertions.assertEquals(false,result);
